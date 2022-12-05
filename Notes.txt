@@ -1,0 +1,930 @@
+
+	Java:
+	====
+
+				Schedule:
+			       ===================================================================================
+
+				10:00 AM to 11:30 AM <- Session1
+				   11:30 AM to 11:45 AM <- Break1
+				11:45 AM to 1:15 PM <- Session2 (Lab)
+				   1:15 PM to 2:15 PM <- Lunch Break
+				2:15 PM to 3:45 PM <- Session3
+				   3:45 PM to 4:00 PM  <-   Break2
+				4:00 PM to 5:30 PM <- Session4 (Lab)
+				   5:30 PM to 5:40 PM <- Break
+				5:40 Pm to 6:30 PM <- Session5 (Lab + Clarifications)
+				====================================================================================
+
+		Features of Java:
+
+		Object Oriented Program
+		Platform Independent
+		More Secure
+
+		Apps  ---> Web App Development [works on browser http or https]
+	
+		ATM --> for Transactions(withdraw or deposit)
+
+		
+		Manual Transaction 
+		
+		Solution:
+		Online Banking or Internet Banking[web version] 
+			Login
+			Transaction
+
+			Smart Solution (just with few minimal steps payment can be done)[opt --> UPI Pin)
+		Instant Transfer [Paytm,Gpay,Phonepay : All UPI Transaction]
+
+		
+			Fast,Secured,Easy,Responsive,Dynamic,Accessible,Availbility
+
+
+			Java:
+
+			
+
+			SDLC:
+				Software Development Life Cycle
+				SDLC Phases
+
+				1. Requirements [BRS,SRS,FRS,CRS]
+				2. Analysis and Feasibility Study
+				3. Design [HLD and LLD]
+				4. Coding <- Actual development starts
+				5. Testing <- STLC
+				6. Implementation <- Deploy on Production Environement
+				7. Maintainence <- Accessible
+
+
+			Introduction
+			Installation:
+				Windows,Linux or MAC
+
+				JDK -> Java Development Kit
+
+				https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html
+				Windows x64 Installer
+
+				Before Installation:
+
+				java --version
+				'java' is not recognized as an internal or external command,operable program or batch file.
+
+				We are Installing JDK11
+				Installation Wizard -> Next -> Verify Path : C:\Program Files\Java\jdk11-0.16.1\
+				CLick Next after verifying path -> JDK successfully Installed.
+
+				Open New cmd prompt:
+
+							java --version
+							Lists java version details ---> java 11.0.16.1 2022-08-18 LTS
+
+							javac --version
+							javac 11.0.16.1
+
+				To Set Path :
+						navigate to C:\Program Files\Java\jdk-11.0.16.1\bin
+						copy path 
+						Edit System Environemnt Variables
+						Environement variables
+						Select Path -> Edit -> New -> Paste the Path copied -> OK
+						Open new command prompt and verify java and javac version.
+
+				Debugging Scenario:
+
+							   wire
+						battery ------------> LED  ==========>  
+									battery + wires +LED ---> LED is On     
+									battery - wires +LED ---> LED is Off
+
+									
+									battery + wires + LED ---> LED is Off  
+										Debugging steps:
+										===============
+											Replace LED -->              LED is ON
+											verify wire connectivity --> Tester(tool)
+											Repalce Battery --->   LED is ON
+
+				===========================================================================================================
+
+
+				In Java :
+				========
+					Using Breakpoints,Debugging tools,Logs,System.out.println() etc......
+
+
+				===========================================================================================================
+
+				HelloWorld ececution:
+				---------------------
+
+				        HelloWorld.java
+
+
+					class HelloWorld{
+					   public static void main(String args[]){
+						System.out.println("Hello World");
+					   }				
+					}
+
+				javac HelloWorld.java
+				
+				============================================================================================================
+
+				.java   ---> .class
+
+				JDK: Java Development Kit
+				JRE: Java Runtime Environment
+				JVM: Java Virtual Machine
+				IDE: Integrated Development Environement
+
+				Eclipse IDE
+					https://www.eclipse.org/downloads/packages/installer
+
+					Eclipse IDE for Enterprise Java and Web Developers
+
+
+				Creating a new Java Project in Eclipse:
+				=======================================
+				
+				File -> New -> Project -> Java Project -> project Name ---> Set JRE to JAVASE 11 ----> uncheck module-info.java  ---> Finish
+									  DemoProject                         
+									  SampleProject
+									  OnlineShoppingApp
+									  TransactionApp
+
+				With src: create a new package
+						Right click on src folder ---> New ---> Package ----> Package name(small letters) 
+
+
+				with in a package create new class:
+						Right click on package ---> New ---> Class ---> ClassName (starts with Capital letter)
+				In Project Explorer:	
+				--------------------
+					HelloProject
+						JRE System Library
+						src
+
+				Rightclick on src folder -> New --> Class --> ClassName  ---> Finish
+			
+				main --> ctrl + spacebar
+
+				Naming converntions:
+				====================
+				class Name should start with UpperCase letter.
+				for example:		
+						Demo,Test,Welcome,HelloWorld etc....
+
+				comments represents about logic
+
+				num1 + num2 
+				
+				variables:
+				=========
+					Syntax:
+					-------
+						data_type var_name = value;
+						
+					Example:
+						int number1 = 20;
+						number1 is a variable of type integer which holds value 20
+
+						
+						float,double,char,boolean etc...
+
+
+				function:
+				=========
+						acess_modifier return_type functionName(){	
+	
+						}
+
+						void addition(){
+						//statements
+						}
+						
+		=====================================================================================================================================
+
+			Installations
+				JDK11 and Eclipse IDE
+			HelloWorld execution in command Prompt
+			Creating a New Java Project
+			HelloWorld Execution
+			Comments: Single Line comments and MultiLine comments
+			Addition
+			-------------------------------------- 
+
+
+			Tasks:
+			=====
+				1. Sample Execution in command Prompt using javac and java command.
+				2. WAP in java to display command line arguments passed while execution
+
+					HelloWorld John
+
+					Output:  Welcome John
+
+				3. Create a New Java Project in Eclipse
+					Perform substraction, multiplication and division.
+		=======================================================================================================================================
+
+				
+		Java Conditions:
+		---------------
+				If Statement:
+					       if(condition){
+						//stmts to execute
+						}
+
+		Loops:
+		------
+			for loop:
+
+				Syntax:  for(initiization; condition; incr/decr){
+						//statmnts
+					  }
+
+
+			while loop:
+					while(condition){
+					}
+
+			do-while:
+					do{
+					//statements
+					}while(condition);
+
+
+		=====================================================================================================================================
+		Task2:	WAP in Java for Fibanacci Series
+			WAP in Java to find a number is Even or Odd
+			WAP in Java to find a number is positive or negative
+
+
+		=====================================================================================================================================
+
+
+		Arrays:  collection of elements of same data type
+		-------
+		        example  : 	10 20 30 40 50 <- length = 5
+					0  1  2  3  4  <- index (0 to 4)
+
+				syntax:   datatype var-name[] = new datatype[size];
+
+
+
+		====================================================================================================================================
+
+		OOPS:
+		-----
+			Object Oriented Programming
+
+			Object:
+			------
+				In Java Object is a instance of a class.
+				To access non static property within a static block we make use of Objects.
+
+				Class:
+					collection of variables and functions(properties of a class).
+
+
+				class Person{
+				    int id;
+				    String name;
+				    int age;
+				    
+				    void getPerson(){
+
+				  }
+				}
+
+
+			Syntax to create an Object : ClassName var_name = new ClassName();
+						     Person p = new Person();
+						     p.id
+						     p.name
+						     p.age
+						     ==============
+						     p.getPerson();
+
+
+			Car:
+			---- 
+				Attributes: brand model color cost etc....
+				Behavior or Functionality:    Forward: 1 2 3 4 5 
+					     		      Reverse:  6
+
+							      Control System:
+								-----------
+											 C      B     A
+											Clutch Break Accelator	
+											pressed	stop  move										
+											released
+
+			File Name should be same as ClassName containing main() funtion when you have multiple classes in one .java file
+
+			
+			class
+			object
+			constructor
+			    default constructor:
+				Constructor Name is same as ClassName
+					Default constructor gets invoked whenever a new reference is created
+
+			    paramterised constructor:
+					 paramterised constructor will have same name as className but with parameters.
+					 paramterised constructor get invoked explicitly.
+	
+			
+			this and super
+			Inheritance:
+			------------
+					inheriting the Properties of Parent class into child class.
+
+			
+				-->Single level Inheritance:
+					A
+
+					B
+
+			--> Multi level Inheritance:
+
+					A
+
+					B
+
+					C
+	
+			--> Hierarchical Inheritance:
+								A
+
+							B  	C	D  
+
+			--> Hybrid Inheritance
+
+								A
+
+							B		C
+								D
+
+
+			--> Multiple Inheritance: ITS NOT SUPPORTED IN JAVA THROUGH CLASSES BUT CAN BE ACHIEVED THROUGH INTERFACES.
+						
+							A		B
+								C            Class C CANNOT INHERIT CLASS A and CLASS B AT SAME TIME
+
+			Polymorphism:
+				Poly: mean many
+				morphic : means behavior
+
+				Function Overloading: compile time polymorphism
+							we will have function with same name but different number of parameters
+								     function with same name,with same number of paramteres but different parameter types
+				Function Overriding: run time polymorphism
+							function with same name,same return type,same number of parameters,same parameter types but
+							inheritance has to happen.
+
+
+					 		
+
+			Encapsulation:
+					wrapping code and data togeather into a single unit.
+			Abstraction:
+					method: show() function is not having function definition.
+					Functions without definition is to be declared with an abstract keyword.
+					The class containing abstract method to be declared with abstract keyword.
+
+			Inteface:
+
+			Access Modifiers:
+			================
+			public : Accessibly everywhere,within a class,other class in same package also other class in other package
+			private: Accessible within only class or block or scope 
+			default: Accessible within a class,other class in same package
+				 but not visible in other class in other package
+			protected:Accessible with in a class also in other class within same package
+				  also accessible in other class in other package with inheriatnce
+
+
+			Exception Handling:
+			-------------------
+						compile time: at the time of compilation(while save in eclipse IDE)
+						run time: AT the time of execution of a program
+
+					Exception: Its an abnormal condition which terminates the execution of a program abruplty.
+
+					To handle this abnormal condition at runtime we use Exception Handling.
+
+					try-catch block
+
+					Syntax:
+						try{	
+						   //statements
+						}catch(Exception ex){
+				
+						}
+
+					Excepption:
+						checked Exception and Unchecked Exceptions
+						java.lang.ArithmeticException
+						java.lang.ArrayIndexOutOfBoundsException
+						java.lang.NullPointerException
+						java.lang.StringIndexOutOfBoundsException
+
+					try catch finally throw throws
+					
+					throw:
+						throw is a Java keyword used to throw an exception explicitly.
+
+					throws:
+
+					custom exception
+						
+
+
+					Online Shopping:
+					===============
+
+					Total Amount :
+							p1: 2000
+							p2: 1000
+							p3: 500
+
+							Total Amount : p1 + p2 + p3 + Tax Amount => 3500 + 500 ==> 4000
+
+									            ( bill_amount / x) * discount => value 
+							Discount in percentage ===> (4000 / 100) * 10 => 400
+
+
+					Collections:
+					===========
+							Its a Java Framework provides an architecture to store and manipulate the group of objects.
+						Searching,Sorting,Insertion and deletion.
+
+							It provides many interfaces(List,Queue,Set) and classes(ArrayList,Vector,LinikedList etc...)
+
+
+					 	Iterable Interface: Parent interface for all collection classes and interfaces.
+
+
+					Autoboxing and Unboxing:
+					=======================
+
+						Autoboxing: conversion of primitive type into an object of the corresponding wrapper class.
+						Unboxing: converting an object of wrapper type to is corresponding primitive value.
+
+						Primitive Type         WrapperClass Type
+
+						boolean  		Boolean
+						int			Integer
+						float			Float
+						long			Long
+						double 			Double
+						char			Character
+						short			Short
+
+
+						Generics: parameterised types
+							ArrayList<String> al = new ArrayList<String>();
+
+							ArrayList<Integer> al = new ArrayList<Integer>();
+
+					
+
+						comparable Interface:
+									Its is used to compare an object of the same class with an instance of a class.
+						The class has to implement java.lang.Comparable interface to compare its instance.
+
+								
+						It provides the compareTo() method  which takes a paramter of the object of that class.
+
+
+
+						comparator interfaces:
+									Its used to order the the objects of user defined classes.
+
+ 						
+						compare method:
+							Syntax: public int compare(Object obj1,Object obj2);
+
+					Threads:
+					--------
+						threads are sub process with light weight with smallest unit of processes.	
+
+						Threads allows us to execute multiple tasks paralelly.
+						
+						MultiTasking:
+						============
+								users can perform multiple actions simultaneously on the machine.
+						--> Process Based (heavy weight)
+						--> Thread Based
+
+						Life cycle of thread:
+									New
+
+									Runnable
+									
+									Running
+
+									Terminated
+
+
+						We create Thread in Java by two ways:
+							1. By Extending Thread class
+							2. By Implementing Runnable Interface
+
+
+						
+								
+
+
+						Desktop1  ---> 
+
+						Desktop2  ---> 
+									Printer
+						Desktop3  ---> 
+
+						Desktop4  ---> 
+
+
+
+						DataBase:
+						=========
+							SQL:	Structured Query Language
+								Installation
+
+						Step1: To Create a new Database
+							create database demoDB;
+						Step2: show databases;
+						Step3: use demoDB;
+						Step4: show tables;
+						Step5: To create a new table:
+							create table users(id int,email varchar(50),password varchar(50));
+						Step6: To get table details:
+							desc users;
+						Step7: Insert a new record in users table:
+						
+							insert into users(id,email,password) values (101,"alex@gmail.com","123456");
+
+						Step8: List all records : select * from users;
+						Step9: To get specific record : select * from users where id = 101;
+						STep10: To update record:
+									 update users set password = "666666" where id = 103;
+
+						Step11: To delete a record:
+									delete from users where id = 103;
+
+							
+								DataBase : demoDB;
+									Table	: users
+											id      email         password
+											1    alex@gmail.com   123456
+
+
+					Java8 Features:
+					==============
+				1) forEach() method in iterable interface
+				2) default and static methods in interfaces					 
+				3) Functional Interfaces and Lambda Expressions
+				4) Java Stream API
+				===============================================
+				5) Java Time API
+				6) Collections API
+				7) Concurrency API
+				8) Java IO
+						
+
+				Lambda Expression syntax:
+				=========================
+
+							No Parameter:  () -> {
+									//Body of no paramtere lambda
+									}
+
+							One Paramter:
+
+									(p1) -> {
+									//Body of no paramtere lambda
+									}
+
+							Two Paramter:
+									(p1,p2) -> {
+									//Body of no paramtere lambda
+									}
+
+
+				
+
+
+
+
+
+
+
+
+						 
+					
+					
+
+
+
+			
+			
+			
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Create a new Java Project
+		Create a new Package
+		Create a new classes
+
+		variables and functions
+		passing parameters to a function
+		addition,substraction,mul,division
+		comments
+		conditions:			
+			  if,
+			  if-else,
+			  if else-if else-if else				
+			  switch
+		Loops:
+			for-loop
+			while-loop
+			do-while
+		Arrays
+		Strings
+		Scanner				
+		OOPS:
+			classes and Objects
+			Accessing Properties of a class using Object
+			Constructor
+				Default and Parameterised constructor
+			this,static keyword,super keyowrd
+			Inheritance:
+				 is-a
+				 has-a
+			Polymorphism
+				Function Overloading
+				Function Overriding
+			Encapsulation
+			Abstraction
+			Interfaces
+		Access Modifiers
+			public private default protected
+		Exception Handling
+			try catch finally throw and throws
+			Custom Exception
+		Collections:
+			Boxing and Unboxing
+			Generics
+		
+		
+		
+
+		
+
+		Task1: 02-Nov-2022		
+			1. Sample Execution in command Prompt using javac and java command.
+			2. WAP in java to display command line arguments passed while execution
+				HelloWorld John
+				Output:  Welcome John
+			3. Create a New Java Project in Eclipse
+				Perform substraction, multiplication and division.
+
+		Task2: 03-Nov-2022
+			1. WAP in Java for Fibanacci Series
+			2. WAP in Java to find a number is Even or Odd
+			3. WAP in Java to find a number is positive or negative
+
+		Task3: 04-Nov-2022
+			1. WAP in Java to Print all elements of an Array
+			2. WAP in Java to Reverse elements of an Array
+			3. WAP in Java to copy all elements from one array to another array.
+			4. WAP in Java to sum of all elements of the array
+
+			5. WAP in java to get character at the given index within the String.
+			6. WAP in java to check whether the string is palindrome or not.
+								LIRIL  --> LIRIL
+								MALAYALAM --> MALAYALAM
+
+		Task4: 07-Nov-2022
+			1. Create a Java class with following Details:
+				className: Passenger
+						p_id,p_name,p_age,p_email,p_phone,p_gender.
+					    Default constructor
+					    Parameterised constructor
+					    getPassengerDetails(): it should return all passenger details.    
+
+					    Create an Object to Passenger class and access getPassengerDetails() through Object.
+
+
+			2. Inheritance:
+		           ------------
+					--> Train:
+						train_number,from,to,departure_date,departure_time,arrival_date,arrival_time.
+
+					 Default constructor
+					 Parameterised constructor
+
+					    getTrainDetails(): it should return all train details.    
+
+					    Create an Object to Train class and access getTrainDetails() through Object.
+						
+					--> Passenger class Inherits Train class Properties
+					 	p_id,p_name,p_age,p_email,p_phone,p_gender.
+					    Default constructor
+					    Parameterised constructor
+					    getPassengerDetails(): it should return all passenger details.    
+
+					    Create an Object to Passenger class and access getPassengerDetails() through Object.
+
+
+
+		Task5:
+			1. Polymporphism:
+			   --------------
+					class1: Vendor
+							order_amount(); // 8000
+
+					class2: Flipkart extends Vendor
+
+							order_amount() //10000
+
+
+						Demo.java:
+							main(){
+							 //reference to flipkart class
+							// order_amount 
+			
+			SDM,BAs				}
+			PA
+			TL
+ 			
+		D1    D2    D3    D4    D5                  =============> Local Server or Statging or Development Server
+		
+		SCM Tools-> Souce Code Managament  (git)
+		
+		Step1: Create a  New Repository in github.com
+		Step2: copy url to clone into repository
+		Step3: create new directory or folder
+		Step4: git init
+		Step5: git clone https://github.com/saurabh90-tech/js-react-samples.git
+		Step6: git status
+		Step7: git add .
+		Step8: git status
+		Step9: git commit -m "javascript react samples"
+		Step10: git status
+		
+		
+		
+		
+		
+		
+		Client or Customer (Production Server)  
+						
+		
+			Company (Developers are working) ---> Staging Server
+			
+			
+			SDLC: Software Development Life Cycle
+			
+			1.  Requirements Gathering
+			2.  Analysis or Feasibilty Study
+			3.  Design
+			4.  Coding
+			5.  Testing
+			6.  Implementation
+			7.  Maintainance
+			
+			
+		aws,azure etc....
+		
+			AWS: Amazon Web Service
+				Objectives:
+				---------
+					 AWS is designed to allow application providers and vendors to quickly and securely host your 
+					 applications.
+					 		SaaS-based Application.(Software As A Service)
+					 		
+					 		APIs: Application Programming Interface.
+					 		
+					 		You can use the AWS Management console or well documented web services APIs to
+					 		access AWS application hosting platform. 
+					-> Operataional Excellence
+					-> Security
+					-> Reliability
+					-> Performance Efficiency
+					-> Cost Optimization
+					-> Sustainability
+					
+		Web Application:
+		================
+		
+				MVC Architecture
+				
+				Building a Web Application on AWS
+				
+					Application and OS Images (Amazon Machine Image)
+					
+					Free tier: In your first year includes 750 hours of t2.micro 
+					(or t3.micro in the Regions in which t2.micro is unavailable) 
+					instance usage on free tier AMIs per month, 
+					30 GiB of EBS storage, 
+					2 million IOs, 
+					1 GB of snapshots, and 
+					100 GB of bandwidth to the internet.
+
+
+
+			
+			
+			IP Address : 13.127.10.86
+			
+			1. Logging into aws Account
+			2. Installing LAMP: Linux,Apache,MySQL,PHP Server
+
+
+
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+
+					
+
+
+
+
+			
+
+				
+
+			
+
+		
+		
