@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function addition(){
+        var n1 = document.getElementById("num1").value;
+        var n2 = document.getElementById("num2").value;
+        var result;
+        result = parseInt(n1) +parseInt(n2);
+        // alert(n1 + " " + n2);
+        document.getElementById("res").value = result;
+    }
+</script>
+<body>
+    <input type="text" id="num1" /> +  <input type="text" id="num2" /> =  <input type="text" id="res" />
+    <br /> <br />
+    <input type="submit" value="ADD" onclick="addition()"/>
+</body>
+</html>

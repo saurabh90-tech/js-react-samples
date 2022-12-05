@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function User(){
+        this.name = 'John';
+        this.age = 23;
+    }
+
+    let user = new User();
+    User.prototype.gender = 'Male';
+    console.log(user.name + " " + user.age + " " + user.gender);
+</script>
+<body>
+    <h2>Sample JS</h2>
+</body>
+</html>

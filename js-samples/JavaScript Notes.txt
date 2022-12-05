@@ -1,0 +1,208 @@
+JavaScript Notes:
+=================
+
+Schedule:			
+			   ===================================================================================
+				10:30 AM to 11:30 AM <- Session2 (Lab)
+				   11:30 AM to 11:45 AM <- Break1
+				11:45 AM to 1:00 PM <- Session1
+				   1:00 PM to 2:00 PM <- Lunch Break
+				2:00 PM to 3:45 PM <- Session3 (Lab)
+				   3:45 PM to 4:00 PM  <-   Break2
+				4:00 PM to 5:30 PM <- Session4
+				   5:30 PM to 5:40 PM <- Break
+				5:40 Pm to 6:30 PM <- Session5 (Lab + Clarifications)
+				====================================================================================
+
+				Web App Development
+		
+		HTML5 CSS3 JS 
+		React
+
+		JavaScript:
+		----------
+		 	Its a Programming Language designed to interact with elements of web Pages.
+
+			Web Page consist of web elements (HTML Tags).
+
+			JavaScript allows us to add interactivity to a web Page 
+			
+			To Design a Web Page : HTML5 and CSS3 
+			To Interace with WebPage: JavaScript
+
+
+			when we design a web page, we create a new file with .html extension:
+	
+
+			for ex: finename.html --> hello.html,welcome.html etc.....
+
+
+			<html></html>
+			<p></p>
+			<h1></h1>
+			<body></body>
+
+
+			variables in js:
+			===============
+
+				var var_name = value;
+			
+				var number = 20;
+				var nnumber = "twenty";
+				
+
+			function addition(){
+			 //code..
+			}
+
+			addition();
+
+
+			Lab1:
+			----
+				Create a JS for perfoming Substraction,Multiplication and Division.
+				Write a JS using switch to read month values and display month name in alert.
+
+
+			Lab2:
+			----
+				Design a Web Page to Read Data(20 fields) from User and display in a console .
+				Example: User Form or Product Details Form or Epployee Details:
+						Name,Email,DOB,gender,address etc....
+
+			Responsive Web Page:
+			--------------------
+						
+			JSON:	JavaScript Object Notation
+
+				{
+				  "name":"john",
+				  "age":21,
+				  "phone":"0987654321"
+				}
+				
+
+			html5 and css3
+				Forms with DataTables
+
+			js,jquery():
+			variables and functions
+			loops
+			conditions
+			objects
+			arrays
+			DOM Manipluations:
+
+						DOM: Document Object Model
+
+
+			Task1:
+			------
+				Design a calculator App using htm53 css and js.
+
+			Task2:
+			------
+				Write a JS to send an email
+			
+
+
+
+			To install Node.js
+					https://nodejs.org/en/
+
+
+			json-server:
+				To configure json server : npm install -g json-server
+							   json-server --watch data.json
+
+
+			Task:
+			-----
+
+				Sports Application:
+				===================
+
+
+					App should allow to create Players,display Players list
+					App should allow to create Games,display Games List.
+					To add Players and Games,verify that user is logged in successfully.
+		
+	
+			Convert object into an Array
+			compare the email and pwd entered in form with array.
+
+			node and npm:
+			============
+  
+			ES6:  ECMAScript 2015 or ES2015
+			---		
+			
+				1. let: Declaring Block-Scoped Variables
+					let variable_name;
+
+
+					let and var:
+
+				2. const:
+			
+				3. Rest Parameters
+
+
+			rest parameters:  ( ... ) three dots
+			----------------
+
+			Syntax:
+				function fn(a,b, ...args){
+				//code
+				}
+
+
+				4. Template Literals:
+				=====================
+
+				5. ES6 Destructuring:  allows to destructure the properties of an object or elements of an array into individual variables.
+				====================
+
+				6. ES6 Classes:
+				================
+
+				7. Arrow Functions:
+				==================
+
+				8. Iterators and Generators:
+				
+				
+
+				9. Promises:
+
+					const promise = new Promise( (resolve,reject) => {
+						if(success){
+						 resolve(value)
+						}else {
+						 reject(error);
+						}
+					});
+
+							
+
+			======================================================================
+				
+			React:	A JavaScript library for building user interfaces
+			-----			
+				UI or User Interface
+				
+				To create react app: npx create-react-app hello-app
+				
+				We are developing Web Apps <- SPA Single Page Application
+							      Responsive Web Page
+				Routing:
+					npm install react-router-dom
+					
+
+				npm run build
+		
+				
+
+				
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerSelector() Demo</title>
+</head>
+<body>
+    <header>
+        <div>
+            <ul id="menu">
+                <li class="item">HTML5</li>
+                <li class="item">CSS</li>
+                <li class="item highlight">JavaScript</li>
+                <li class="item">TypeScript</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2> Welcome to JS DOM </h2>
+        <section class="section-a">
+            <h3>UI/UX</h3>
+            <p>
+                This is a sample Paragraph Text
+            </p>
+            <button>Read More</button>
+        </section  class="section-b">
+            <h3> PWA Development</h3>
+        <section>
+            <p>
+                This is a sample Paragraph Text
+            </p>
+            <button>Read More</button>
+        </section>
+    </main>
+    <script>
+        let ele = document.querySelector('.item');
+        console.log(ele);
+    </script>
+</body>
+</html>
